@@ -612,6 +612,16 @@ input[type="radio"]+label:before {
 	margin-bottom: -20px;
 	text-align: left;
 }
+.submini2{
+	color: #5f6063;
+	font-size: 11px;
+	/* font-weight: 600; */
+	/* padding: 20px; */
+	padding-left: 30px;
+	margin-top: -10px;
+	margin-bottom: -20px;
+	text-align: center;
+}
 
 .nudge {
 	padding: 5px;
