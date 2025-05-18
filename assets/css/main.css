@@ -602,6 +602,16 @@ input[type="radio"]+label:before {
 
 /* Icon */
 
+.submini{
+	color: #6e6e6e;
+	font-size: 17px;
+	/* font-weight: 600; */
+	/* padding: 20px; */
+	padding-left: 30px;
+	margin-top: -10px;
+	margin-bottom: -20px;
+	text-align: left;
+}
 
 .nudge {
 	padding: 5px;
