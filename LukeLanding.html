@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+
+
+<title>Scout MTB Page</title>
+
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f2f7ff;
+        color: #333;
+    }
+    header {
+        background: #2c5f2d;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav a {
+        color: #e92727;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .container {
+        padding: 40px;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    /* Simple graphic area */
+    .graphics {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    /* animated SVG */
+    .bike-wheel {
+        animation: spin 2s infinite linear;
+        transform-origin: center;
+    }
+
+    @keyframes spin {
+        from { transform: rotate(0deg);}
+        to { transform: rotate(360deg);}
+    }
+
+    /* Scout figure (simple CSS art) */
+    .scout {
+        width: 120px;
+        height: 200px;
+        margin: 20px auto;
+        position: relative;
+    }
+
+    .scout .body {
+        width: 60px;
+        height: 90px;
+        background: #c19a6b;
+        position: absolute;
+        left: 30px;
+        top: 50px;
+        border-radius: 10px;
+    }
+
+    .scout .head {
+        width: 60px;
+        height: 60px;
+        background: #f1d5b0;
+        border-radius: 50%;
+        position: absolute;
+        top: -10px;
+        left: 30px;
+    }
+
+    .scout .hat {
+        width: 70px;
+        height: 25px;
+        background: #4a6b3b;
+        position: absolute;
+        top: -20px;
+        left: 25px;
+        border-radius: 5px;
+    }
+
+    footer {
+        margin-top: 50px;
+        text-align: center;
+        padding: 20px;
+        background: #e3e3e3;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+
+
+<body>
+
+<header>
+    <h1> Luke's Wesbite </h1>
+
+</header>
+
+<div class="container">
+
+    <h2>Welcome Scouts!</h2>
+    <p> This is Luke's Website</p>
+
+    <!-- Animated SVG Mountain Bike -->
+    <div class="graphics">
+        
+        
+        
+          
+        <!-- Simple Scout Graphic -->
+        <div class="scout">
+            <div class="hat"></div>
+            <div class="head"></div>
+            <div class="body"></div>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#trails">Trails</a></li>
+            <li><a href="#gear">Gear</a></li>
+            <li><a href="#tips">Riding Tips</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+</div>
+
+
+
+
+
+<footer>
+    © 2025 Built by Luke 
+</footer>
+
+
+
+
+
+
+<script>
+// Example JS: click to spin wheels faster
+document.querySelector("svg").addEventListener("click", function () {
+    document.querySelectorAll(".bike-wheel").forEach(w => {
+        w.style.animationDuration = "0.5s";
+        setTimeout(() => w.style.animationDuration = "2s", 2000);
+    });
+});
+</script>
+
+</body>
+</html>
